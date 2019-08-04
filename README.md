@@ -14,13 +14,14 @@ The objective of this work is to achieve a robust reconstruction that addresses 
 </p>
 
 ### Data Source
-The data used in this work is from 38 MRF vivo scans on 5 subjects and 2 different MRI machines.
+The dataset used in this work is acquired by 38 MRF vivo scans on 5 subjects and 2 different MRI machines with the same experimental setup.
 
 ### Neural Network Structure
-The neural network model inputs 3D MRF signal data and outputs the tissue parameter T1 map. 
+The neural network model inputs 3D MRF signal data and outputs the tissue parameter T1 map. The dataset with 38 examples is split into 30 for training and 8 for test. Early stopping is used to prevent overfitting. 
 
 ### Results
-The reconstruction is incredibly fast and accurate. The T1 map can be recovered from a highly aliased MRF data with great details.
+The reconstruction is incredibly fast and robust. The T1 map can be recovered from a highly aliased MRF data with great details. It also shows robustness against stray points in case of subpar image segmentation. Moreover, the current neural network structure is trained and tuned with only 30 examples. Higher accuracy is expected to be achieved with more data.
+
 <p align="center">
 <img src="https://github.com/mxf293/End-to-End_MR_Fingerprinting_Reconstruction/blob/master/pics/Recon%20T1%20-%20Ground%20Truth%20T1.png" width="600" height="300">
 </p>
