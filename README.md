@@ -16,7 +16,7 @@ The objective of this work is to achieve a robust reconstruction that addresses 
 ### Data Source
 The dataset used in this work is acquired by 38 MRF vivo scans on 5 subjects and 2 different MRI machines with the same experimental setup.
 
-### Neural Network Structure
+### Neural Network Model and Training
 The neural network model inputs 3D MRF signal data and outputs the tissue parameter T1 map. The dataset with 38 examples is split into 30 for training and 8 for test. Early stopping is used to prevent overfitting. 
 
 ### Results
