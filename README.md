@@ -6,8 +6,8 @@ Without futher confusion, MRI is analogous to a clear picture taken on a tripod 
 The objective of this work is to address the 2D de-aliasing and replace the time-series pattern matching with one neural network model. 
 
 <p align="center">
-<img src="https://github.com/mxf293/End-to-End_MR_Fingerprinting_Reconstruction/blob/master/MRF_Signal.gif" width="300" height="300">
-  
+<img src="https://github.com/mxf293/End-to-End_MR_Fingerprinting_Reconstruction/blob/master/pics/MRF_Signal.gif" width="300" height="300">
+
 </p>
 
 ### Neural Network Structure
