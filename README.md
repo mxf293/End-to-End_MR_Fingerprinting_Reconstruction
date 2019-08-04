@@ -1,4 +1,4 @@
-# End-to-End 3D MR Fingerprinting Reconstruction
+# End-to-End MR Fingerprinting Reconstruction
 Reconstruct tissue parameter maps from 3D spatial-temporal magnetic resonance fingerprinting (MRF) signal data using a deep learning model. It addresses the fundamental 2D image aliasing problem in MRF as well as the time-series pattern matching in one end-to-end model. Detailed neural network structure will not be disclosed at this moment.
 
 ### Introduction
