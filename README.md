@@ -17,8 +17,7 @@ The objective of this work is to achieve a robust reconstruction that addresses 
 The dataset used in this work is acquired by our collaborator Brendan Eck for his study [Increasing the Value of Legacy MRI Scanners with Magnetic Resonance Fingerprinting](https://www.ismrm.org/19/program_files/Th07.htm). It consists of 38 MRF vivo scans on 5 subjects and 2 different MRI machines with the same experimental setup. 
 
 ### Neural Network Model and Training
-In this work, the neural network model inputs gridded 3D spatial-temporal MRF signal data in the x-space and outputs the tissue parameter T1 map. The MRF signal data is synthesized using the experimental T1 and T2 maps and the aliasing artifact at each time frame is caused by a randomly undersampled k-space (ten-fold). The MRF signal has 25 time frames in with each TRs about 7ms in this example. 
-The dataset with 38 examples is split into 30 for training and 8 for test. Early stopping is used to prevent overfitting. 
+In this work, the neural network model inputs gridded 3D spatial-temporal MRF signal data in the x-space and outputs the tissue parameter T1 map. The MRF signal data is synthesized using the experimental T1 and T2 maps and the aliasing artifact at each time frame is a result of randomly undersampled k-space (ten-fold). Note that the k-space coverage changes every time frame and is determined by the randome state (seed). The MRF signal has 25 time frames in with each TRs about 7ms in this example. The dataset with 38 examples is split into 30 for training and 8 for test. Early stopping is used to prevent overfitting. 
 
 ### Results
 The end-to-end reconstruction has several huge advantages over the conventional reconstruction method. 
