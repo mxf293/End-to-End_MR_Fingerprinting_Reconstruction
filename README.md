@@ -4,7 +4,7 @@ Tissue parameter map reconstruction from the 3D spatial-temporal magnetic resona
 ### Introduction
 Without getting into details and causing too much confusion, MRI can be analogous to a clear picture taken with a tripod whereas MRF is like a short film taken by a shaking camera and you want a clear mapping of the underlying properties about the subject. 
 
-MRF signal data is 3D spatial-temporal data. The pixel-wise time-series signal, depending on the tissue parameters and experimental setups, forms a unique pattern or a 'Fingerprint' that later is used for pattern matching. However, the MRF signal is spatially aliased at each time frame due to highly undersampled Fourier sapce (k-space). And the aliasing artifacts contaminate into the time domain and cause errors in the pattern matching. For example, the MRF signal data is shown in the gif along side with the corresponding ground truth T1 map.
+MRF signal data is 3D spatial-temporal data (2D spatial + 1D time). The pixel-wise time-series signal, depending on the tissue parameters and experimental setups, forms a unique pattern or a 'Fingerprint' that later is used for pattern matching. However, the MRF signal is spatially aliased at each time frame due to highly undersampled Fourier sapce (k-space). And the aliasing artifacts contaminate into the time domain and cause errors in the pattern matching. For example, the MRF signal data is shown in the gif along side with the corresponding ground truth T1 map.
 
 The objective of this work is to achieve a robust reconstruction that addresses not only the 2D aliasing problem but also the time-series pattern matching, all using a single end-to-end deep learning model.
 
