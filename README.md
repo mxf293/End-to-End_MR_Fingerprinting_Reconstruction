@@ -17,7 +17,7 @@ The objective of this work is to achieve a robust reconstruction that addresses 
 The dataset used in this work is acquired by our collaborator Brendan Eck for his study [Increasing the Value of Legacy MRI Scanners with Magnetic Resonance Fingerprinting](https://www.ismrm.org/19/program_files/Th07.htm). It consists of 38 MRF vivo scans on 5 subjects and 2 different MRI machines with the same experimental setup. 
 
 ### Neural Network Model and Training
-The neural network model inputs 3D MRF signal data and outputs the tissue parameter T1 map. The dataset with 38 examples is split into 30 for training and 8 for test. Early stopping is used to prevent overfitting. 
+The neural network model inputs 3D spatial-temporal MRF signal data and outputs the tissue parameter T1 map. The dataset with 38 examples is split into 30 for training and 8 for test. Early stopping is used to prevent overfitting. 
 
 ### Results
 The reconstruction is incredibly fast and robust. The T1 map can be recovered from a highly aliased MRF data with great details. It also shows robustness against stray points in case of subpar image segmentation. Moreover, the current neural network model is trained and tuned with only 30 examples. Higher accuracy is expected to be achieved with more data.
