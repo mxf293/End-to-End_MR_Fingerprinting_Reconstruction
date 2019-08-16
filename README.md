@@ -19,7 +19,7 @@ The dataset used in this work is acquired by our collaborator Brendan Eck for hi
 ### Neural Network Model and Training
 In this work, the neural network model inputs gridded 3D spatial-temporal MRF signal data in the x-space and outputs the tissue parameter T1 map. The MRF signal data is synthesized using the experimental T1 and T2 maps and the aliasing artifact at each time frame is a result of randomly undersampled k-space (ten-fold). Note that the k-space coverage changes every time frame and is determined by the randome state (seed). The MRF signal has 25 time frames in with each TRs about 7ms in this example. The dataset with 38 examples is split into 30 for training and 8 for test. Early stopping is used to prevent overfitting. 
 
-### Results
+### Results and Discussion
 The end-to-end reconstruction has several huge advantages over the conventional reconstruction method. 
 1. The aliasing artifact is removed in the final reconstructed parameter map. It is free from the fundamental problem of undersampling k-space in MRF.
 2. Pixel-wise time-series pattern matching is no longer needed and the reconstruction time is reduced astronomically. Once the deep learning model is trained, the model prediction takes less a second to run for a given input. 
